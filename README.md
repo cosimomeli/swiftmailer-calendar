@@ -48,7 +48,7 @@ More information about iCalendar specifications here: http://www.kanzaki.com/doc
 
 Just be sure to set the METHOD field as PUBLISH or REQUEST, and set at least the recipient of the email as ATTENDEE.
  
- #### 2. Create the Swift_Calendar object
+#### 2. Create the Swift_Calendar object
  
  ```PHP
  $attachment = new Swift_Calendar($iCalString, Swift_Calendar::METHOD_REQUEST);
@@ -56,7 +56,7 @@ Just be sure to set the METHOD field as PUBLISH or REQUEST, and set at least the
  
  The method must be the same as the one you set in the iCal.
  
- ### 3. Attach it to the message
+#### 3. Attach it to the message
  
  ```PHP
  $swiftMessage->attach($attachment);
@@ -64,13 +64,13 @@ Just be sure to set the METHOD field as PUBLISH or REQUEST, and set at least the
  
  You can add more different MIME parts to the message. I tested it with text/plan + text/html and with a normal attachment too.
  
- ### 4. Send it
+#### 4. Send it
  
  ```PHP
  $mailer->send($swiftMessage);
  ```
  
- ##Notes
+##Notes
  
  Mail clients handle the embedded calendar in different ways.
  Here are some of my personal experiences:
@@ -79,6 +79,5 @@ Just be sure to set the METHOD field as PUBLISH or REQUEST, and set at least the
  
  * **Gmail**: Uses the fields DESCRIPTION and SUMMARY as description and title of the event (just as it should be)
   
-  ##
-  
-  Feel free to ask any question and to give any suggestion for improvements.  
+
+Feel free to ask any question and to give any suggestion for improvements.  
