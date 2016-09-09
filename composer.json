@@ -1,0 +1,30 @@
+{
+  "name": "cosimomeli/swiftmailer-calendar",
+  "description": "Swiftmailer attachment class to send embedded iCal",
+  "keywords": [
+    "swiftmailer",
+    "calendar",
+    "vcalendar"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cosimomeli/swiftmailer-calendar",
+  "support": {
+    "issues": "https://github.com/cosimomeli/swiftmailer-calendar/issues",
+    "source": "https://github.com/cosimomeli/swiftmailer-calendar"
+  },
+  "authors": [
+    {
+      "name": "Cosimo Meli",
+      "email": "cosimomeli92@hotmail.it"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "swiftmailer/swiftmailer": "^5.4"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
