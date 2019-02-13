@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Simple MIME part to handle embedded calendar events
- *
- * @author Cosimo Meli
- */
 class Swift_CalendarTest extends \PHPUnit\Framework\TestCase
 {
 
