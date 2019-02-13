@@ -42,7 +42,7 @@ class Swift_Calendar extends Swift_MimePart {
             throw new InvalidArgumentException('Method must be PUBLISH or REQUEST');
         }
 
-        $this->_setHeaderParameter('Content-Type', 'method', $method);
+        $this->setHeaderParameter('Content-Type', 'method', $method);
 
         return $this;
     }
@@ -53,7 +53,7 @@ class Swift_Calendar extends Swift_MimePart {
      * @return string
      */
     public function getMethod() {
-        return $this->_getHeaderParameter('Content-Type', 'method');
+        return $this->getHeaderParameter('Content-Type', 'method');
     }
 
     /**
